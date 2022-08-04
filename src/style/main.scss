@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Reenie+Beanie&display=swap");
+
+html {
+  font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  font-weight: normal;
+  font-family: "Reenie Beanie", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1.2em;
+
+  h4 {
+    font-family: "Gamja Flower", cursive;
+    font-weight: 200;
+  }
+}
+
+.app {
+  margin-top: 2rem;
+  display: grid;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(230, 173, 173);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@import "./navbar.scss";
+@import "./add-movie.scss";
+@import "./home.scss";
+@import "./about.scss";
+@import "./footer.scss";
