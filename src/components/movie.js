@@ -5,7 +5,9 @@ export default function Movie(props) {
   const deleteMovie = () => {
     console.log(props);
     axios
-      .delete(`http://localhost:5000/movie/${props.movieData.id}`)
+      .delete(
+        `https://movie-store-for-us.herokuapp.com/movie/${props.movieData.id}`
+      )
       .then((response) => console.log("success", response));
   };
 
