@@ -18,9 +18,9 @@ export default function Movie(props) {
       <h3>{props.movieData.genre}</h3>
       <p>{props.movieData.price}</p>
       <h4>{props.movieData.description}</h4>
-      <button className="delete" onClick={deleteMovie}>
+      {/* <button className="delete" onClick={deleteMovie}>
         Delete
-      </button>
+      </button> */}
     </div>
   );
 }
